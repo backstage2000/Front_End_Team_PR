@@ -1,0 +1,157 @@
+.burger {
+  display: block;
+  z-index: 1001;
+  position: relative;
+
+  @include square(44px);
+
+  &::after,
+  &::before {
+    @include abs-center;
+
+    content: '';
+    width: 18px;
+    height: 3px;
+    background-color: var(--color-text-100);
+    border-radius: 2px;
+    transition:
+      transform 0.4s ease,
+      box-shadow 0.4s ease,
+      opacity 0.4s ease;
+  }
+
+  &::after {
+    box-shadow:
+      0 -6px var(--color-text-100),
+      0 6px var(--color-text-100);
+  }
+
+  @include on-desktop {
+    display: none;
+  }
+
+  &--active::after {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+  &--active::before {
+    transform: rotate(-45deg);
+  }
+}
+
+.headerLogo {
+  display: none;
+
+  @include on-desktop {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.navbar {
+  transform: translateX(-100%);
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+  z-index: 100;
+  background-color: var(--color-background-100);
+
+  @include on-desktop {
+    position: static;
+    transform: none;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-white-100);
+  }
+
+  &--active {
+    transform: translateX(0);
+    opacity: 1;
+
+    @include on-desktop {
+      transform: none;
+    }
+  }
+}
+
+.navbarList {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+
+  @include on-desktop {
+    display: flex;
+    gap: 60px;
+    position: static;
+    transform: none;
+    flex-direction: row;
+  }
+
+  @include large-dekstop {
+    gap: 100px;
+  }
+}
+
+.navbarLink {
+  @include on-desktop {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    transition: var(--transition-default);
+    font-weight: 700;
+    padding: 10px;
+
+    @include hover {
+      background-color: var(--color-background-100);
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      translate: -50%;
+      width: 0;
+      height: 2px;
+
+      background-color: var(--color-primary-100);
+      transition-duration: inherit;
+    }
+  }
+}
+
+.navbarTitle {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 60px;
+  padding-right: 20px;
+  font-size: 24px;
+  background-color: var(--color-white-100);
+
+  @include on-desktop {
+    display: none;
+  }
+}

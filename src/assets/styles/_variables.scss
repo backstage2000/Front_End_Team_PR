@@ -1,0 +1,24 @@
+:root {
+  //#region Color
+
+  --color-primary-100: #4747f9;
+  --color-primary-15: #e6eaf9;
+  --color-secondary: #7979f0;
+  --color-white-100: #fbfbfe;
+  --color-stroke: #dcdde6;
+  --color-background-100: #e9eaef;
+  --color-system-red: #b70000;
+  --color-text-100: #0a0a0c;
+  --color-gray: #68687c;
+
+  //#region color-hover
+
+  --color-hover-btn-blue: #2044c7;
+  --color-hover-btn-blue-border: #15339e;
+
+  //#endregion
+
+  //#endregion
+
+  --transition-default: all 0.3s ease;
+}

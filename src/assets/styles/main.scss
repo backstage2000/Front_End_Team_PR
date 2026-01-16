@@ -1,0 +1,49 @@
+@use 'reset';
+@use './fonts';
+@forward 'variables';
+
+body {
+  font-family: 'JakartaRegular', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-100);
+}
+
+.container {
+  width: 100%;
+  @include content-padding-inline;
+
+  @include large-dekstop {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.main {
+  margin-bottom: 40px;
+  background-color: var(--color-background-100);
+
+  @include on-tablet {
+    margin-bottom: 50px;
+  }
+
+  @include on-desktop {
+    margin-bottom: 80px;
+  }
+}
+
+.title {
+  color: var(--color-white-100);
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 700;
+
+  @include on-tablet {
+    font-size: 24px;
+  }
+
+  @include on-desktop {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
