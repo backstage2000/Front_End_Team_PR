@@ -1,9 +1,14 @@
 import style from './button.module.scss';
 
-export const Button = () => {
+interface ButtonProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+export const Button = ({ children, className }: ButtonProps) => {
   return (
-    <button className={style.button}>
-      <span>Choose</span>
+    <button className={`${style.button} ${className || ''}`}>
+      <span>{children}</span>
     </button>
   );
 };

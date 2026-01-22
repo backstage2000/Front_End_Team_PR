@@ -8,7 +8,7 @@
     "paths": {
       "@GlobalStyle/*": ["src/assets/styles/*"],
       "@assets/*": ["src/assets/*"],
-      "@GlobalComponents": ["src/components/*"]
+      "@GlobalComponents": ["src/components/index.ts"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

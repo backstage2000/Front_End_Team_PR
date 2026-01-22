@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import style from './navbar.module.scss';
+import { NavLink } from 'react-router-dom';
+import { useLockBodyScroll } from '../../Hooks/useLockBodyScroll';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
+  useLockBodyScroll(isOpen);
 
   return (
     <>
@@ -19,24 +21,24 @@ export const Navbar = () => {
 
         <ul className={style.navbarList}>
           <li>
-            <a className={style.navbarLink} href="">
+            <NavLink to={'/'} className={style.navbarLink}>
               HOME
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className={style.navbarLink} href="">
+            <NavLink to={'/search'} className={style.navbarLink}>
               SEARCH
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className={style.navbarLink} href="">
+            <NavLink to={'#'} className={style.navbarLink}>
               MAP
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className={style.navbarLink} href="">
+            <NavLink to={'#'} className={style.navbarLink}>
               RESERVATIONS
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

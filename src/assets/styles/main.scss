@@ -20,16 +20,7 @@ body {
 }
 
 .main {
-  margin-bottom: 40px;
   background-color: var(--color-background-100);
-
-  @include on-tablet {
-    margin-bottom: 50px;
-  }
-
-  @include on-desktop {
-    margin-bottom: 80px;
-  }
 }
 
 .title {
@@ -46,4 +37,17 @@ body {
     font-size: 48px;
     line-height: 58px;
   }
+}
+
+.section {
+  padding: 24px 0;
+
+  @include on-desktop {
+    padding: 40px 0;
+  }
+}
+
+.menu-open {
+  height: 100vh;
+  overflow-y: hidden;
 }

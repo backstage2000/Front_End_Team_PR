@@ -14,7 +14,6 @@ export const CafeCatalog = () => {
         <CardCafe />
         <CardCafe />
         <CardCafe />
-        <CardCafe />
       </div>
     </div>
   );

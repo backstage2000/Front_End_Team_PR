@@ -23,7 +23,7 @@ export const CardCafe = () => {
               <span className={style.time}>9:00-21:00</span>
             </div>
             <div className={style.cardBottom}>
-              <Button />
+              <Button>Chose</Button>
               <Checkbox
                 {...label}
                 color="error"
