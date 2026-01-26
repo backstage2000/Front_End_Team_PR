@@ -5,5 +5,19 @@ import { CardCafe } from './CardCatalog/CardCafe';
 import { Button } from './Button/Button';
 import { Footer } from './footer/Footer';
 import { FilterSidebar } from './filterSidebar/FilterSidebar';
+import { Breadcrumb } from './Breadcrumb/Breadcrumb';
+import { ReadMore } from './ReadMore/ReadMore';
+import { MenuCafe } from './MenuCafe/MenuCafe';
 
-export { CafeCatalog, Header, Navbar, CardCafe, Button, Footer, FilterSidebar };
+export {
+  CafeCatalog,
+  Header,
+  Navbar,
+  CardCafe,
+  Button,
+  Footer,
+  FilterSidebar,
+  Breadcrumb,
+  ReadMore,
+  MenuCafe,
+};

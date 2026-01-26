@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import './assets/styles/main.scss';
 import style from './app.module.scss';
 import { Footer, Header } from '@GlobalComponents';
+import { CafeInfoPage } from './modules/CafeInfoPage/CafeInfoPage';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <Header />
 
         <main className="main">
-          <Outlet />
+          {/* <Outlet /> */}
+          <CafeInfoPage />
         </main>
 
         <Footer />

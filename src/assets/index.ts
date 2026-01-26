@@ -8,6 +8,13 @@ import facebook from './icons/facebook.svg';
 import searchIcon from './icons/searchIcon.svg';
 import buttonFilter from './icons/buttonFilter.svg';
 
+import salad from './images/menuCafeImg/Salad.png';
+import cake from './images/menuCafeImg/cake.png';
+import pancakes from './images/menuCafeImg/Pancakes.png';
+import latte from './images/menuCafeImg/Latte.png';
+import espresso from './images/menuCafeImg/Espresso.png';
+import tea from './images/menuCafeImg/tea.png';
+
 export {
   HeroSectionMobile,
   HeroSectionOnTablet,
@@ -17,4 +24,10 @@ export {
   facebook,
   searchIcon,
   buttonFilter,
+  salad,
+  cake,
+  pancakes,
+  latte,
+  espresso,
+  tea,
 };
