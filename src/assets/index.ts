@@ -15,6 +15,8 @@ import latte from './images/menuCafeImg/Latte.png';
 import espresso from './images/menuCafeImg/Espresso.png';
 import tea from './images/menuCafeImg/tea.png';
 
+import arrowUp from './icons/Arrow-Up.svg';
+
 export {
   HeroSectionMobile,
   HeroSectionOnTablet,
@@ -30,4 +32,5 @@ export {
   latte,
   espresso,
   tea,
+  arrowUp,
 };

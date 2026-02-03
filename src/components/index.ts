@@ -8,6 +8,7 @@ import { FilterSidebar } from './filterSidebar/FilterSidebar';
 import { Breadcrumb } from './Breadcrumb/Breadcrumb';
 import { ReadMore } from './ReadMore/ReadMore';
 import { MenuCafe } from './MenuCafe/MenuCafe';
+import { Reservation } from './Reservation/Reservation';
 
 export {
   CafeCatalog,
@@ -20,4 +21,5 @@ export {
   Breadcrumb,
   ReadMore,
   MenuCafe,
+  Reservation,
 };
